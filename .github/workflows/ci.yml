@@ -11,7 +11,7 @@ jobs:
     if: github.event_name == 'pull_request'
     permissions:
       contents: read
-    uses: joatverse/.github/.github/workflows/format.yml@main
+    uses: pxndavinci/.github/.github/workflows/format.yml@main
     with:
       runtime: python
 
@@ -21,7 +21,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
-    uses: joatverse/.github/.github/workflows/release.yml@main
+    uses: pxndavinci/.github/.github/workflows/release.yml@main
     with:
       runtime: python
     secrets:
